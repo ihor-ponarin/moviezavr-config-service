@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/ihor-ponarin/moviezavr-config-storage
+          uri: ${HOME}/projects/pets/moviezavr/config-storage
+
+
+# http://localhost:9000/<name of the file>/<name of the profile>
